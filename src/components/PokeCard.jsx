@@ -1,19 +1,22 @@
 //import css//
+import React from 'react';
 
-export default function PokeCard() {
+export default function PokeCard({nom}) {
 
 // variable
 //state
 //useffect
-
+console.log(nom);
     return (
-      <figure className="card">
-        <img
-          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-          alt="bulbasaur"
-          className="card-img"
-        />
-        <figcaption>bulbasaur</figcaption>
-      </figure>
+      <>
+        <figure className="card">
+          <img
+            src={nom +'.png'}
+            alt={nom}
+            className="card-img"
+          />
+          <figcaption>bulbasaur</figcaption>
+        </figure>
+      </>
     );
   }
