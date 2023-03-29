@@ -3,7 +3,7 @@ import PokeCard from "./PokeCard";
 
 export default function PokeCardList() {
 
-const pokemons=["charmender","squirtle"]
+const pokemons=["charmender","squirtle","bulsasaur"]
 
     // variable//
     //state//
