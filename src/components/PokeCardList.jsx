@@ -1,22 +1,13 @@
-// import //
 import PokeCard from "./PokeCard";
 
 export default function PokeCardList() {
+  const pokemons = ["charmander", "squirtle", "bulbasaur"];
 
-const pokemons=["charmender","squirtle","bulsasaur"]
-
-    // variable//
-    //state//
-    //useffect//
-    
-        return (
-          <>
-            {
-            pokemons.map( (pokemon) =>{
-                <PokeCard nom={pokemon} />
-            } )
-            }
-          </>
-        );
-      }
-    
+  return (
+    <>
+      {pokemons.map((pokemon) => (
+        <PokeCard nom={pokemon} key={pokemon} />
+      ))}
+    </>
+  );
+}
