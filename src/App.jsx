@@ -1,4 +1,4 @@
-import './assets/css/App.css'
+import './assets/css/App.scss'
 import PokeCardList from "./components/PokeCardList";
 import { DatePicker } from 'antd';
 import Header from './components/Header';
